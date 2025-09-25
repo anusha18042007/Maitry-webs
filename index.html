@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAITRI - AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Homepage Start -->
+    <div id="homepage" class="page">
+        <h1>MAITRI</h1>
+        <p>Your companion for mental & physical well-being in space</p>
+        <button id="startBtn">Start</button>
+    </div>
+
+    <!-- Dashboard Page -->
+    <div id="dashboard" class="page" style="display:none;">
+        <h2>Dashboard</h2>
+        
+        <div class="container">
+            <!-- Chatbox -->
+            <div class="box chatbox">
+                <h3>Chat with MAITRI</h3>
+                <div id="chatDisplay" class="chat-display"></div>
+                <input type="text" id="userInput" placeholder="Type here...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+
+            <!-- Health Panel -->
+            <div class="box health">
+                <h3>Health Monitoring</h3>
+                <p>Heart Rate: <span id="heartRate">72</span> bpm</p>
+                <p>Oxygen Level: <span id="oxygenLevel">98</span>%</p>
+                <button onclick="simulateVitals()">Simulate Vitals</button>
+            </div>
+
+            <!-- AI Suggestions -->
+            <div class="box suggestions">
+                <h3>AI Suggestions</h3>
+                <ul id="suggestionsList">
+                    <li>Stay positive!</li>
+                    <li>Take deep breaths.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
